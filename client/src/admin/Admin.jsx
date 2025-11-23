@@ -17,7 +17,7 @@ const Admin = () => {
       }
 
       const response = await fetch(
-        "http://localhost:3070/api/messages/getMessage",
+        "https://portfolio-zect.onrender.com/api/messages/getMessage",
         {
           method: "GET",
           headers: {
@@ -46,7 +46,7 @@ const Admin = () => {
       }
 
       const response = await fetch(
-        `http://localhost:3070/api/messages/deleteMessage/${id}`,
+        `https://portfolio-zect.onrender.com/api/messages/deleteMessage/${id}`,
         {
           method: "DELETE",
           headers: {

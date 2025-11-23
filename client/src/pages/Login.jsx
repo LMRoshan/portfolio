@@ -27,7 +27,7 @@ const Login = () => {
     
        const { username, password } = values;
         try {
-          const response = await fetch("http://localhost:3070/api/auth/login", {
+          const response = await fetch("https://portfolio-zect.onrender.com/api/auth/login", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

@@ -33,7 +33,7 @@ const Connect = () => {
     validationSchema,
     onSubmit: async(values, { resetForm, setSubmitting }) => {
       try {
-        const response = await fetch("http://localhost:3070/api/messages/createMessage", {
+        const response = await fetch("https://portfolio-zect.onrender.com/api/messages/createMessage", {
             method: "POST", 
             headers: {
                 "Content-Type": "application/json",
