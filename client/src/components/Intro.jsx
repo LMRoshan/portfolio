@@ -1,5 +1,6 @@
 import React from "react";
 import Me from "../assets/me1.png";
+import { Link } from "react-router-dom";
 
 const Intro = () => {
   return (
@@ -45,32 +46,18 @@ const Intro = () => {
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          {/* Profile Image */}
-          {/* <div className="mb-12">
-            <div className="w-40 h-40 mx-auto mb-8 relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-cyan-400 rounded-full animate-spin-slow"></div>
-              <div className="absolute inset-2 bg-gray-900 rounded-full flex items-center justify-center overflow-hidden">
-                <img
-                  src={Me}
-                  alt="Roshan - MERN Stack Developer"
-                  className="w-full h-full object-cover rounded-full"
-                />
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full animate-ping"></div>
-              </div>
-            </div>
-          </div> */}
 
           <div className="mb-12">
             <div className="w-40 h-40 mx-auto mb-8 relative cursor-pointer group">
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-cyan-400 rounded-full animate-spin-slow group-hover:animate-pulse"></div>
               <div className="absolute inset-2 bg-gray-900 rounded-full flex items-center justify-center overflow-hidden">
-                <a href="/login" className="w-full h-full">
+                <Link to="/login" className="w-full h-full">
                   <img
                     src={Me}
                     alt="Roshan - MERN Stack Developer"
                     className="w-full h-full object-cover rounded-full transform group-hover:scale-110 transition-transform duration-300"
                   />
-                </a>
+                </Link>
                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full animate-ping"></div>
               </div>
             </div>
